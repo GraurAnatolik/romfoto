@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+/*________________________________________Back_Parallax_*/
+.back_parallax{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100vh;
+    z-index: -1;
+}
+.parallax_bg{
+    position: absolute;
+    height: 100%;
+    width: 110%;
+    top: 0;
+    left: -10%;
+
+}
+.layer1{
+    background: url(../img/layer1.jpg);
+    background-size: cover;
+}
+.layer2{
+    background: url(../img/layer2.png);
+    background-size: cover;
+}
+.layer3{
+    background: url(../img/layer3.png);
+    background-size: cover;
+}
+/*________________________________________Back_Parallax_*/
+
+/*________________________________________Button_to_top_*/
+.button_to_top{
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(9, 6, 179);
+}
+
+.button_to_top::before,
+.button_to_top::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button_to_top::before{
+    width: 5px;
+    height: 25px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #f5f8f6;
+}
+
+.button_to_top::after{
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    border-top: 5px solid #f5f8f6;
+    border-left: 5px solid #f5f8f6;
+}
+/*________________________________________Button_to_top_*/
+
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: rgb(3, 13, 158);
+    text-shadow: 10px 10px 15px rgb(255, 255, 255); 
+}
